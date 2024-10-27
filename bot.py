@@ -11,9 +11,9 @@ async def on_ready():
     await bot.change_presence(activity=discord.Game(name="in a Zoo"))
 
 cogs_list = {
-    'general'
+    'general',
+    'personal' # Make a 'Personal.py' file to store your own commands without messing with the bot.
 }
-
 
 for cog in cogs_list:
     bot.load_extension(f'cogs.{cog}')
